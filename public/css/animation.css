@@ -1,0 +1,64 @@
+/* animações */
+
+@keyframes up{
+    from{
+        opacity: 0;
+        transform: translateY(16px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-up{
+    animation-name: up;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes right{
+    from{
+        transform: translateX(-100%)
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.animate-right{
+    animation-name: right;
+    animation-duration: 300ms;
+
+    
+}
+
+@keyframes textRight{
+    from{
+        transform: translateX(-100%)
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.animate-textRight{
+    animation-name: textRight;
+    animation-duration: 600ms;
+}
+
+@keyframes appear{
+   from{
+    opacity: 0;
+   } 
+   to{
+    opacity: 1;
+   }
+}
+
+.animate-appear{
+    animation-name: appear;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+}
